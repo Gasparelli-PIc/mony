@@ -1,0 +1,70 @@
+/* Paineis */
+#PainelPrincipalPane{
+    -fx-pref-width: 441px;   
+    -fx-pref-height: 550px;  
+    -fx-background-color: #F4F4F2 ;
+}
+
+#PainelLateralPane{
+    -fx-pref-width: 359px;
+    -fx-pref-height: 550px;
+    -fx-background-color: #D4CDC5;
+}
+
+/* Barra Opções*/
+#BarraOpcoesMenuBar{
+    -fx-pref-width: 800px;
+    -fx-pref-height: 30px;
+    -fx-background-color: #243A69;
+}
+
+/* Entrada Texto*/
+#LoginTextEntry{
+    -fx-pref-width: 220px;
+    -fx-pref-height: 33px;
+    -fx-background-radius: 10;
+    -fx-background-radius: 10;
+}
+
+
+#SenhaTextEntry{
+    -fx-pref-width: 220px;
+    -fx-pref-height: 33px;
+    -fx-background-radius: 10;
+    -fx-background-radius: 10;
+}
+
+#SenhaConfirmTextEntry{
+    -fx-pref-width: 220px;
+    -fx-pref-height: 33px;
+    -fx-background-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/*Botões*/
+#RegistrarButton{
+    -fx-pref-width: 126.72px;
+    -fx-pref-height: 26px;
+    -fx-background-color: #5B88A5;
+    -fx-background-radius: 20;
+}
+#RegistrarButton:hover {
+    -fx-background-color: #3c6683;
+}
+#RegistrarButton:pressed {
+    -fx-background-color: #31536b;
+}
+
+#VoltarAoLoginButton{
+    -fx-background-color: #5B88A5;
+    -fx-background-radius: 20;
+}
+#VoltarAoLoginButton:hover {
+    -fx-background-color: #3c6683;
+}
+#VoltarAoLoginButton:pressed {
+    -fx-background-color: #31536b;
+}
+
+
+

@@ -1,0 +1,43 @@
+/* Botoes Login */
+#LogarButton {
+    -fx-background-radius: 10;  
+    -fx-border-radius: 10;
+    -fx-background-color: #5B88A5;
+}
+#LogarButton:hover {
+    -fx-background-color: #3c6683;
+}
+#LogarButton:pressed {
+    -fx-background-color: #31536b;
+}
+
+
+/* Botão Registro */
+#RegistroButton {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #5B88A5;
+}
+#RegistroButton:hover {
+    -fx-background-color: #3c6683;
+}
+#RegistroButton:pressed {
+    -fx-background-color: #31536b;
+}
+
+
+/* Entrada de Textos */
+#LoginTextEntry {
+    -fx-background-radius: 10;
+}
+#SenhaPasswordField {
+    -fx-background-radius: 10;
+}
+
+/* Painels */
+#PainelLateralPane {
+    -fx-background-color: #D4CDC5;
+}
+#BarraOpcoesMenuBar {
+    -fx-background-color: #243A69;
+}

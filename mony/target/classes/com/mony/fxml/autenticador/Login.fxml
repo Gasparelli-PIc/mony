@@ -6,13 +6,15 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.LoginController">
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.LoginController">
    <children>
-      <Pane id="PainelMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@../../Styles/LoginStyle.css">
+      <Pane id="PainelMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@../../styles/autenticados/LoginStyle.css">
          <children>
             <Pane id="PainelLateralPane" fx:id="PainelLateralPane" prefHeight="550.0" prefWidth="359.0">
                <children>
@@ -37,7 +39,7 @@
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </PasswordField>
-                  <Button id="LogarButton" layoutX="170.0" layoutY="370.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Entrar" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="LogarButton" layoutX="170.0" layoutY="370.0" mnemonicParsing="false" onAction="#logar" prefHeight="26.0" prefWidth="100.0" text="Entrar" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Cambria" size="14.0" />
                      </font>
@@ -58,6 +60,11 @@
                         <Font name="Cambria" size="16.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="192.0" fitWidth="255.0" layoutX="124.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/LogoMony.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
          </children>

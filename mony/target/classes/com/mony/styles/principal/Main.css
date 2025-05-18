@@ -1,0 +1,96 @@
+/*Panes*/
+#MenuBarVbox{
+    -fx-background-color: #243A69;
+}
+
+/*Botões*/
+#VisaoGeralButton {
+    -fx-background-color: #243A69;
+}
+
+#VisaoGeralButton:hover {
+    -fx-background-color: #223664;
+}
+
+#VisaoGeralButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+
+#TransacoesButton {
+    -fx-background-color: #243A69;
+}
+
+#TransacoesButton:hover {
+    -fx-background-color: #223664;
+}
+
+#TransacoesButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+#CategoriasButton {
+    -fx-background-color: #243A69;
+}
+
+#CategoriasButton:hover {
+    -fx-background-color: #223664;
+}
+
+#CategoriasButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+#OrcamentosButton {
+    -fx-background-color: #243A69;
+}
+
+#OrcamentosButton:hover {
+    -fx-background-color: #223664;
+}
+
+#OrcamentosButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+#RelatoriosButton {
+    -fx-background-color: #243A69;
+}
+
+#RelatoriosButton:hover {
+    -fx-background-color: #223664;
+}
+
+#RelatoriosButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+#ConfiguracoesButton {
+    -fx-background-color: #243A69;
+}
+
+#ConfiguracoesButton:hover {
+    -fx-background-color: #223664;
+}
+
+#ConfiguracoesButton:pressed{
+    -fx-background-color: #1e3058;
+}
+
+
+#LogoutButton {
+    -fx-background-color: #243A69;
+}
+
+#LogoutButton:hover {
+    -fx-background-color: #223664;
+}
+
+#LogoutButton:pressed{
+    -fx-background-color: #1e3058;
+}

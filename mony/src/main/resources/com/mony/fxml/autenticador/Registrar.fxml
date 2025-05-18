@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-
-<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.RegistrarController">
+<StackPane stylesheets="@../../styles/autenticados/RegistroStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.RegistrarController">
    <children>
-      <Pane id="PainelMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" stylesheets="@../../Styles/RegistroStyle.css">
+      <Pane id="PainelMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0">
          <children>
-            <Pane id="PainelPrincipalPane" prefHeight="200.0" prefWidth="200.0">
+            <Pane id="PainelPrincipalPane" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../styles/autenticados/RegistroStyle.css">
                <children>
                   <TextField id="LoginTextEntry" layoutX="110.0" layoutY="187.0" promptText="Login">
                      <font>
@@ -22,7 +21,7 @@
                   <TextField id="SenhaTextEntry" layoutX="110.0" layoutY="232.0" promptText="Senha" />
                   <TextField id="SenhaConfirmTextEntry" layoutX="110.0" layoutY="277.0" promptText="Confirmar Senha" />
                   <Button id="RegistrarButton" layoutX="157.0" layoutY="338.0" mnemonicParsing="false" text="Registrar" textFill="WHITE" />
-                  <Button fx:id="VoltarAoLoginButton" layoutX="180.0" layoutY="372.0" mnemonicParsing="false" onAction="#trocarLogin" stylesheets="@../../Styles/RegistroStyle.css" text="voltar ao login " textFill="WHITE">
+                  <Button fx:id="VoltarAoLoginButton" layoutX="180.0" layoutY="372.0" mnemonicParsing="false" onAction="#trocarLogin" text="voltar ao login " textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>

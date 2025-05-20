@@ -1,0 +1,55 @@
+/* Seleciona a TableView com fx:id="TabelaTableView" */
+#TabelaTableView {
+    -fx-background-color: #C5C9D4; /* Cor de fundo da tabela */
+    -fx-border-color: #C5C9D4; /* Cor da borda da tabela */
+    -fx-border-width: 1px; /* Espessura da borda */
+    -fx-border-radius: 8; /* Cantos arredondados */
+    -fx-background-radius: 8; /* Fundo com cantos arredondados */
+    -fx-padding: 5; /* Espaçamento interno */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3); /* Sombra externa */
+    -fx-table-cell-border-color: transparent; /* Remove linhas verticais internas */
+}
+
+/* Estilo do cabeçalho da tabela */
+#TabelaTableView .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C); /* Degradê no cabeçalho */
+    -fx-border-radius: 8 8 0 0; /* Arredondamento só nos cantos superiores */
+}
+
+/* Estilo do texto no cabeçalho */
+#TabelaTableView .column-header .label {
+    -fx-text-fill: white; /* Cor do texto */
+    -fx-font-weight: bold; /* Texto em negrito */
+    -fx-font-size: 14px;
+}
+
+/* Estilo das linhas alternadas */
+#TabelaTableView .table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+#TabelaTableView .table-row-cell:even {
+    -fx-background-color: #f1f1f1;
+}
+
+/* Estilo ao passar o mouse em cima da linha */
+#TabelaTableView .table-row-cell:hover {
+    -fx-background-color: #dce775;
+}
+
+/* Estilo da célula quando selecionada */
+#TabelaTableView .table-row-cell:selected {
+    -fx-background-color: #81c784;
+    -fx-text-fill: black;
+}
+
+/* Estilo das células */
+#TabelaTableView .table-cell {
+    -fx-font-size: 13px;
+    -fx-padding: 8px;
+}
+
+/* Remove a borda interna entre células */
+#TabelaTableView .table-cell {
+    -fx-border-color: transparent;
+}

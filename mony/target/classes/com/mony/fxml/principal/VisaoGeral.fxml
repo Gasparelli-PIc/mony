@@ -1,16 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="VisaoGeralPane" fx:id="VisaoGeralPanefx" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="VisaoGeralPane" fx:id="VisaoGeralPaneFX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1306.0" stylesheets="@../../styles/principal/VisaoGeral.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label id="VisaoGeralLabel" fx:id="VisaoGeralLabelFX" layoutX="143.0" layoutY="62.0" text="Visão Geral">
          <font>
             <Font name="Segoe UI" size="32.0" />
          </font>
       </Label>
+      <VBox id="SaldoTotalVbox" fx:id="SaldoTotalVboxFX" layoutX="123.0" layoutY="130.0" prefHeight="125.0" prefWidth="250.0">
+         <children>
+            <Label prefWidth="65.0" text="Saldo Total" textFill="#00000080">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="28.0" top="32.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="23.0" text="R$">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="0,00">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="ReceitasVbox" fx:id="ReceitasVboxFX" layoutX="393.0" layoutY="130.0" prefHeight="125.0" prefWidth="250.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="48.0" text="Receitas" textFill="#00000080">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="28.0" top="32.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="23.0" text="R$">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="0,00">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="SaldoMensalVbox" fx:id="SaldoMensalVboxFX" layoutX="933.0" layoutY="130.0" prefHeight="125.0" prefWidth="250.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="77.0" text="Saldo Mensal" textFill="#00000080">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="28.0" top="32.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="23.0" text="R$">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="0,00">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="DispesasVbox" fx:id="DispesasVboxFX" layoutX="663.0" layoutY="130.0" prefHeight="125.0" prefWidth="250.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="54.0" text="Despesas" textFill="#00000080">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="28.0" top="32.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="250.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="23.0" text="R$">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="0,00">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane id="RFMAnchorPane" fx:id="RFMAnchorPaneFX" layoutX="123.0" layoutY="295.0" prefHeight="370.0" prefWidth="520.0">
+         <children>
+            <Label layoutX="35.0" layoutY="30.0" text="Resumo financeiro do mes" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="DMAnchorPane" fx:id="DMAnchorPaneFX" layoutX="663.0" layoutY="295.0" prefHeight="370.0" prefWidth="520.0">
+         <children>
+            <Label layoutX="35.0" layoutY="30.0" text="Resumo por categoria" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

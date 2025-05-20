@@ -1,0 +1,32 @@
+/*Panes*/
+#SaldoTotalVbox{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+
+}
+#ReceitasVbox{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+#DispesasVbox{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+#SaldoMensalVbox{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+#RFMAnchorPane{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+#DMAnchorPane{
+    -fx-background-color: #C5C9D4;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}

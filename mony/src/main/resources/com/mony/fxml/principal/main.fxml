@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" id="PainelPrincipalAchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1366.0" stylesheets="@../../styles/principal/Main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.MainController">
+<AnchorPane id="PainelPrincipalAchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="1366.0" stylesheets="@../../styles/principal/Main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mony.MainController">
    <children>
       <VBox id="MenuBarVbox" fx:id="MenuBarVboxFX" prefHeight="728.0" prefWidth="60.0">
          <children>
@@ -18,15 +19,18 @@
                   <Font name="Segoe UI" size="15.0" />
                </font>
             </Label>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX" mnemonicParsing="false" onAction="#visaoGeral" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/house.png" />
                      </image>
                   </ImageView>
-               </graphic></Button>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX1" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button id="TransacoesButton" fx:id="TransacoesButtonFX" mnemonicParsing="false" onAction="#transacoes" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -34,8 +38,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX11" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+            <Button id="CategoriasButton" fx:id="CategoriasButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -43,8 +50,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX12" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+            <Button id="OrcamentosButton" fx:id="OrcamentosButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -52,8 +62,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX13" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+            <Button id="RelatoriosButton" fx:id="RelatoriosButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -61,8 +74,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button id="VisaoGeralButton" fx:id="VisaoGeralButtonFX14" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
+            <Button id="ConfiguracoesButton" fx:id="ConfiguracoesButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -70,9 +86,12 @@
                      </image>
                   </ImageView>
                </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Pane prefHeight="307.0" prefWidth="60.0" />
-            <Button id="LogoutButton" fx:id="LogoutButtonFX" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" onAction="#logout">
+            <Button id="LogoutButton" fx:id="LogoutButtonFX" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="60.0">
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -83,5 +102,6 @@
             </Button>
          </children>
       </VBox>
+      <AnchorPane id="scenaPane" fx:id="scenaPaneFX" layoutX="60.0" prefHeight="728.0" prefWidth="1306.0" />
    </children>
 </AnchorPane>
